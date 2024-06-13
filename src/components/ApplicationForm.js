@@ -46,7 +46,7 @@ const ApplicationForm = ({ addApplication }) => {
         guardianRelationship
       };
 
-      const response = await axios.post('http://localhost:5000/api/applications/apply', newApplication, {
+      const response = await axios.post('https://EduBursaryManagementSystem-backend.onrender.com/api/applications/apply', newApplication, {
         headers: {
           Authorization: `Bearer ${token}`
         }

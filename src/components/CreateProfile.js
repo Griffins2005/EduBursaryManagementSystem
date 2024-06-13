@@ -38,7 +38,7 @@ const CreateProfile = () => {
 
     try {
       const token = localStorage.getItem('token');
-      const response = await axios.post('http://localhost:5000/api/profile/create', profileData, {
+      const response = await axios.post('https://EduBursaryManagementSystem-backend.onrender.com/api/profile/create', profileData, {
         headers: {
           Authorization: `Bearer ${token}`
         }

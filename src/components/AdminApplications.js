@@ -11,7 +11,7 @@ const AdminApplications = () => {
 
   const fetchApplications = async () => {
     try {
-      const response = await axios.get('http://localhost:5000/api/auth/applications/admin');
+      const response = await axios.get('https://EduBursaryManagementSystem-backend.onrender.com/api/auth/applications/admin');
       setApplications(response.data);
     } catch (error) {
       console.error('Error fetching applications:', error);

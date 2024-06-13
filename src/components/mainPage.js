@@ -25,7 +25,7 @@ const MainPage = () => {
           throw new Error('No token found');
         }
 
-        const response = await axios.get('http://localhost:5000/api/applications/user', {
+        const response = await axios.get('https://EduBursaryManagementSystem-backend.onrender.com/api/applications/user', {
           headers: {
             Authorization: `Bearer ${token}`
           }
