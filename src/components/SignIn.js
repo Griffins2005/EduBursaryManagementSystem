@@ -18,11 +18,11 @@ const SignIn = () => {
 
     try {
       console.log('Sign Up Attempt:', { email, password }); // Logging the signup attempt
-      const response = await axios.post('https://EduBursaryManagementSystem-backend.onrender.com/api/auth/signup', { email, password });
+      const response = await axios.post('https://edubursarymanagementsystem-backend.onrender.com/api/auth/signup', { email, password });
       console.log('Sign Up Success:', response.data); // Logging successful signup
 
       // Log in the user after signing up
-      const loginResponse = await axios.post('https://EduBursaryManagementSystem-backend.onrender.com/api/auth/login', { email, password });
+      const loginResponse = await axios.post('https://edubursarymanagementsystem-backend.onrender.com/api/auth/login', { email, password });
       console.log('Login Response:', loginResponse.data);
 
       if (loginResponse.data && loginResponse.data.token) {

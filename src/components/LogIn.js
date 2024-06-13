@@ -16,7 +16,7 @@ const LogIn = ({ onLogIn }) => {
 
     try {
       console.log('Logging in with:', { email, password });
-      const response = await axios.post('https://EduBursaryManagementSystem-backend.onrender.com/api/auth/login', { email, password });
+      const response = await axios.post('https://edubursarymanagementsystem-backend.onrender.com/api/auth/login', { email, password });
       console.log('Login Response:', response.data);
 
       if (response.data && response.data.token) {

@@ -15,7 +15,7 @@ const UserProfile = () => {
           throw new Error('No token found');
         }
 
-        const response = await axios.get('https://EduBursaryManagementSystem-backend.onrender.com/api/profile/me', {
+        const response = await axios.get('https://edubursarymanagementsystem-backend.onrender.com/api/profile/me', {
           headers: {
             Authorization: `Bearer ${token}`
           }
